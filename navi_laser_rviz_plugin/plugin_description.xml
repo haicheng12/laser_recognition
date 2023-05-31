@@ -1,0 +1,7 @@
+<library path="lib/libnavi_laser_rviz_plugin">
+    <class name="navi_laser_rviz_plugin/LaserPanel"
+           type="navi_laser_rviz_plugin::LaserPanel"
+           base_class_type="rviz::Panel">
+        <description>A panel widget allowing multi-goals navigation.</description>
+    </class>
+</library>

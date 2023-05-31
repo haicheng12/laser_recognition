@@ -6,24 +6,24 @@
 
 namespace wr_ls_udp
 {
-enum ExitCode
-{
-    ExitSuccess = 0,
-    ExitError   = 1,
-    ExitFatal   = 2
-};
+    enum ExitCode
+    {
+        ExitSuccess = 0,
+        ExitError = 1,
+        ExitFatal = 2
+    };
 
-class CParserBase
-{
-public:
-    CParserBase();
-    virtual ~CParserBase();
+    class CParserBase
+    {
+    public:
+        CParserBase();
+        virtual ~CParserBase();
 
-    virtual int Parse(char *data,
-                      size_t data_length,
-                      WrLsConfig &config,
-                      sensor_msgs::LaserScan &msg) = 0;
-};
+        virtual int Parse(char *data,
+                          size_t data_length,
+                          WrLsConfig &config,
+                          sensor_msgs::LaserScan &msg) = 0;
+    };
 } /*namespace wr_ls_udp*/
 
 #endif /*PARSER_BASE__*/

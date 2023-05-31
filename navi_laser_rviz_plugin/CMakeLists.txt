@@ -3,7 +3,7 @@
 ##
 ## First start with some standard catkin stuff.
 cmake_minimum_required(VERSION 2.8.3)
-project(navi_multi_goals_pub_rviz_plugin)
+project(navi_laser_rviz_plugin)
 find_package(catkin REQUIRED COMPONENTS rviz geometry_msgs std_msgs actionlib_msgs)
 catkin_package(CATKIN_DEPENDS message_runtime)
 include_directories(${catkin_INCLUDE_DIRS})
@@ -36,7 +36,7 @@ add_definitions(-DQT_NO_KEYWORDS)
 ## Here we specify the list of source files, including the output of
 ## the previous command which is stored in ``${MOC_FILES}``.
 set(SOURCE_FILES
-  src/multi_navi_goal_panel.cpp
+  src/laser_panel.cpp
   ${MOC_FILES}
 )
 
